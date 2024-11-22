@@ -1,9 +1,0 @@
-# path: /content/Drive/MyDrive/SeSAC_Final_Project_새싹무침/data/YOLO_test_split_dataset_jiwon
-train: /content/Drive/MyDrive/SeSAC_Final_Project_새싹무침/data/Merged_pothole_split_dataset/train
-val: /content/Drive/MyDrive/SeSAC_Final_Project_새싹무침/data/Merged_pothole_split_dataset/valid
-test: /content/Drive/MyDrive/SeSAC_Final_Project_새싹무침/data/Merged_pothole_test_dataset
-
-
-# Classes
-names:
-  0: pothole
