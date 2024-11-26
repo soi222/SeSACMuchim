@@ -1,0 +1,236 @@
+// src/pages/PotholeDetectionPage.js
+import React, { useState, useContext, useEffect, useRef } from 'react';
+import { StateContext } from '../StateContext';
+import { useNavigate } from 'react-router-dom';
+import ProgressBar from '../components/ProgressBar'; // 진행 바 컴포넌트
+import '../styles.css';
+
+const PotholeDetectionPage = () => {
+  const { dispatch } = useContext(StateContext);
+  const navigate = useNavigate();
+  const [status, setStatus] = useState('녹화를 시작하려면 "시작"이라고 말해주세요.');
+  const [isListening, setIsListening] = useState(false);
+  const [recognizedText, setRecognizedText] = useState('');
+  const [showProgressBar, setShowProgressBar] = useState(false);
+  const [videoFile, setVideoFile] = useState(null);
+  const [videoURL, setVideoURL] = useState('');
+  const recognitionRef = useRef(null);
+
+  useEffect(() => {
+    startVoiceRecognition();
+
+    return () => {
+      if (recognitionRef.current) {
+        recognitionRef.current.stop();
+        recognitionRef.current = null;
+      }
+    };
+  }, []);
+
+  const startVoiceRecognition = () => {
+    setIsListening(true);
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    if (!SpeechRecognition) {
+      alert('이 브라우저는 음성 인식을 지원하지 않습니다.');
+      setIsListening(false);
+      return;
+    }
+
+    const recognition = new SpeechRecognition();
+    recognition.lang = 'ko-KR';
+    recognition.continuous = false;
+    recognition.interimResults = false;
+
+    recognition.onresult = (event) => {
+      const transcript = event.results[0][0].transcript;
+      console.log('음성 인식 결과:', transcript);
+      setRecognizedText(transcript);
+
+      setTimeout(() => {
+        setRecognizedText('');
+      }, 2000);
+
+      if (transcript.includes('시작')) {
+        recognition.stop();
+        setIsListening(false);
+        setStatus('녹화를 시작합니다.');
+        speak('녹화를 시작합니다.').then(() => {
+          processVideo();
+        });
+      } else {
+        setStatus('다른 단어를 인식하였습니다. 다시 시도해주세요.');
+        speak('다른 단어를 인식하였습니다. 다시 시도해주세요.');
+      }
+    };
+
+    recognition.onerror = (event) => {
+      console.error('음성 인식 에러:', event.error);
+      setStatus('음성 인식 에러 발생. 다시 시도하세요.');
+      setIsListening(false);
+    };
+
+    recognition.onend = () => {
+      if (recognitionRef.current && isListening) {
+        recognition.start();
+      }
+    };
+
+    recognition.start();
+    recognitionRef.current = recognition;
+  };
+
+  const speak = (text) => {
+    return new Promise((resolve) => {
+      if ('speechSynthesis' in window) {
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'ko-KR';
+
+        utterance.onend = () => {
+          resolve();
+        };
+
+        utterance.onerror = (event) => {
+          console.error('음성 합성 에러:', event.error);
+          resolve();
+        };
+
+        window.speechSynthesis.speak(utterance);
+      } else {
+        console.error('이 브라우저는 음성 합성을 지원하지 않습니다.');
+        resolve();
+      }
+    });
+  };
+
+  const processVideo = async () => {
+    // 진행 바 표시
+    setShowProgressBar(true);
+
+    setStatus('녹화 중...');
+    await showProgressWithSpeak('녹화 중입니다.');
+
+    setStatus('저장 중입니다...');
+    await showProgressWithSpeak('저장 중입니다.');
+
+    setStatus('전송 중입니다...');
+    await showProgressWithSpeak('전송 중입니다.');
+
+    dispatch({
+      type: 'ADD_VIDEO',
+      payload: `포트홀 영상 ${new Date().toLocaleString()}`,
+    });
+
+    setStatus('포트홀 영상이 전송되었습니다!');
+    await speak('포트홀 영상이 전송되었습니다!');
+
+    // 진행 바 숨기기
+    setShowProgressBar(false);
+
+    // 2초 후에 전송 현황 페이지로 이동
+    setTimeout(() => {
+      navigate('/transferred-videos');
+    }, 2000);
+  };
+
+  const showProgressWithSpeak = async (text) => {
+    let progress = 0;
+    const startTime = Date.now();
+    const duration = 5000; // 5초
+    const interval = setInterval(() => {
+      const elapsed = Date.now() - startTime;
+      if (elapsed >= duration) {
+        progress = 100;
+        setShowProgressBar(false);
+        clearInterval(interval);
+      } else {
+        // 진행 바 업데이트 (실제 로직에 따라 수정 가능)
+        progress = Math.min(100, ((elapsed / duration) * 100));
+      }
+    }, 500);
+
+    await speak(text);
+    clearInterval(interval);
+    progress = 100;
+  };
+
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      setVideoFile(file);
+      setVideoURL(URL.createObjectURL(file));
+      setStatus('비디오 파일이 선택되었습니다.');
+    }
+  };
+
+  const handleUpload = async () => {
+    if (!videoFile) {
+      alert('비디오 파일을 선택해주세요.');
+      return;
+    }
+
+    // 진행 바 표시
+    setShowProgressBar(true);
+    setStatus('비디오를 업로드 중입니다...');
+
+    // 실제 업로드 로직 구현 필요
+    await new Promise((resolve) => setTimeout(resolve, 5000));
+
+    // 진행 바 숨기기
+    setShowProgressBar(false);
+    setStatus('비디오 업로드가 완료되었습니다!');
+
+    // 상태 업데이트
+    dispatch({
+      type: 'ADD_VIDEO',
+      payload: `업로드된 비디오 ${new Date().toLocaleString()}`,
+    });
+
+    // 2초 후에 전송 현황 페이지로 이동
+    setTimeout(() => {
+      navigate('/transferred-videos');
+    }, 2000);
+  };
+
+  return (
+    <div className="container">
+      <h1 className="header">포트홀 탐지</h1>
+      {/* 음성 인식 중일 때 REC 표시 */}
+      {isListening && (
+        <div className="rec-indicator">
+          <span role="img" aria-label="녹음 중">
+            🔴
+          </span>{' '}
+          음성 인식 중...
+        </div>
+      )}
+      <p>{status}</p>
+      {/* 인식된 텍스트를 표시 */}
+      {recognizedText && (
+        <p className="recognized-text">
+          <strong>인식된 음성:</strong> {recognizedText}
+        </p>
+      )}
+      {/* 파일 업로드 버튼 */}
+      <input type="file" accept="video/*" onChange={handleFileChange} />
+
+      {/* 업로드된 비디오 표시 */}
+      {videoURL && (
+        <div className="video-container">
+          <video src={videoURL} controls width="100%" />
+        </div>
+      )}
+
+      {/* 업로드 버튼 */}
+      <button onClick={handleUpload}>비디오 업로드</button>
+
+      {/* 진행 바 표시 */}
+      {showProgressBar && <ProgressBar />}
+
+      {/* 메인 페이지로 돌아가기 버튼 */}
+      <button onClick={() => navigate('/')}>메인 페이지로 돌아가기</button>
+    </div>
+  );
+};
+
+export default PotholeDetectionPage;

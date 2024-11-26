@@ -1,0 +1,143 @@
+// src/pages/MainPage.js
+import React, { useEffect, useState, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
+import '../styles.css';
+
+const MainPage = () => {
+  const navigate = useNavigate();
+  const [status, setStatus] = useState('운전 중에 포트홀을 발견하면 "포트홀!"이라고 외쳐주세요.');
+  const [isListening, setIsListening] = useState(false);
+  const [recognizedText, setRecognizedText] = useState('');
+  const recognitionRef = useRef(null);
+
+  useEffect(() => {
+    startVoiceRecognition();
+
+    return () => {
+      if (recognitionRef.current) {
+        recognitionRef.current.stop();
+        recognitionRef.current = null;
+      }
+    };
+  }, []);
+
+  const startVoiceRecognition = () => {
+    setIsListening(true);
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    if (!SpeechRecognition) {
+      alert('이 브라우저는 음성 인식을 지원하지 않습니다.');
+      setIsListening(false);
+      return;
+    }
+
+    const recognition = new SpeechRecognition();
+    recognition.lang = 'ko-KR';
+    recognition.continuous = false;
+    recognition.interimResults = false;
+
+    recognition.onresult = (event) => {
+      const transcript = event.results[0][0].transcript;
+      console.log('음성 인식 결과:', transcript);
+      setRecognizedText(transcript);
+
+      setTimeout(() => {
+        setRecognizedText('');
+      }, 2000);
+
+      if (transcript.includes('포트홀')) {
+        recognition.stop();
+        setIsListening(false);
+        setStatus('포트홀을 감지하였습니다. 잠시 후 녹화를 시작합니다.');
+        speak('포트홀을 감지하였습니다. 잠시 후 녹화를 시작합니다.').then(() => {
+          setTimeout(() => {
+            navigate('/pothole-detection');
+          }, 1000);
+        });
+      } else {
+        setStatus('다른 단어를 인식하였습니다. 다시 시도해주세요.');
+        speak('다른 단어를 인식하였습니다. 다시 시도해주세요.').then(() => {
+          // 음성 인식을 재시작합니다.
+          if (isListening && recognitionRef.current) {
+            recognitionRef.current.start();
+          }
+        });
+      }
+    };
+
+    recognition.onerror = (event) => {
+      console.error('음성 인식 에러:', event.error);
+      setStatus('음성 인식 에러 발생. 다시 시도하세요.');
+      // 에러 발생 시에도 음성 인식을 재시작합니다.
+      if (isListening && recognitionRef.current) {
+        recognitionRef.current.start();
+      }
+    };
+
+    recognition.onend = () => {
+      if (isListening) {
+        recognition.start();
+      }
+    };
+
+    recognition.start();
+    recognitionRef.current = recognition;
+  };
+
+  const speak = (text) => {
+    return new Promise((resolve) => {
+      if ('speechSynthesis' in window) {
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'ko-KR';
+
+        utterance.onend = () => {
+          resolve();
+        };
+
+        utterance.onerror = (event) => {
+          console.error('음성 합성 에러:', event.error);
+          resolve();
+        };
+
+        window.speechSynthesis.speak(utterance);
+      } else {
+        console.error('이 브라우저는 음성 합성을 지원하지 않습니다.');
+        resolve();
+      }
+    });
+  };
+
+  return (
+    <div className="container">
+      <h1 className="header">포트홀 보상 앱</h1>
+      {/* 음성 인식 중일 때 REC 표시 */}
+      {isListening && (
+        <div className="rec-indicator">
+          <span role="img" aria-label="녹음 중">
+            🔴
+          </span>{' '}
+          음성 인식 중...
+        </div>
+      )}
+      <p>{status}</p>
+      {/* 인식된 텍스트를 표시 */}
+      {recognizedText && (
+        <p>
+          <strong>인식된 음성:</strong> {recognizedText}
+        </p>
+      )}
+      <div className="button-container">
+        <button className="main-button" onClick={() => navigate('/pothole-detection')}>
+          <div className="emoji-icon">🕳️</div>
+          포트홀 탐지
+        </button>
+        <button className="main-button" onClick={() => navigate('/mypage')}>
+          <div className="emoji-icon">📋</div>
+          마이페이지
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default MainPage;

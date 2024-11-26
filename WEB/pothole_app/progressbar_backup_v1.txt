@@ -1,0 +1,36 @@
+// src/components/ProgressBar.js
+import React, { useState, useEffect } from 'react';
+import '../styles.css';
+
+const ProgressBar = () => {
+  const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    let progressValue = 0;
+    const startTime = Date.now();
+    const duration = 5000; // 5초
+    const interval = setInterval(() => {
+      const elapsed = Date.now() - startTime;
+      if (elapsed >= duration) {
+        progressValue = 100;
+        setProgress(progressValue);
+        clearInterval(interval);
+      } else {
+        // 랜덤한 증가량 적용
+        const increment = Math.random() * 20;
+        progressValue = Math.min(100, progressValue + increment);
+        setProgress(progressValue);
+      }
+    }, 500);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="progress-bar">
+      <div className="progress-bar-fill" style={{ width: `${progress}%` }}></div>
+    </div>
+  );
+};
+
+export default ProgressBar;
