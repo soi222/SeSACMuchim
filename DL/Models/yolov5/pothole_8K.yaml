@@ -1,0 +1,4 @@
+train: /content/drive/MyDrive/SeSAC_Final_Project_새싹무침/data/Merged_pothole_split_dataset/train/images
+val: /content/drive/MyDrive/SeSAC_Final_Project_새싹무침/data/Merged_pothole_split_dataset/valid/images
+nc: 1  # 클래스 수 (예: 포트홀만 있는 경우 1)
+names: ['pothole']
