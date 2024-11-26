@@ -1,0 +1,9 @@
+path: /content/Drive/MyDrive/SeSAC_Final_Project_새싹무침/data/YOLO_test_split_dataset_jiwon
+train: /content/Drive/MyDrive/SeSAC_Final_Project_새싹무침/data/YOLO_test_split_dataset_jiwon/train/images
+val: /content/Drive/MyDrive/SeSAC_Final_Project_새싹무침/data/YOLO_test_split_dataset_jiwon/valid/images
+test: /content/Drive/MyDrive/SeSAC_Final_Project_새싹무침/data/YOLO_test_split_dataset_jiwon/test/images
+
+
+# Classes
+names:
+  0: pothole
