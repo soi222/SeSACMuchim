@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/15Olr_3rusnlv84dNXouh5HCBd8iQfuvW
 """
 
-! pip install gTTS
+# ! pip install gTTS
 
 from gtts import gTTS
 from IPython.display import Audio
