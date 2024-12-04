@@ -20,7 +20,7 @@
  </tr> 
  <tr> 
   <td align="center"> 
-   <img src="https://via.placeholder.com/150" width="100" height="100" style="border-radius: 50%;"><br> 
+   <img src="https://github.com/user-attachments/assets/55a3b48f-c5cb-41f3-9c08-6ae69a02c54c" width="100" height="100" style="border-radius: 50%;"><br> 
    <a href="https://github.com/Chang-Hyeon-Park">@Chang-Hyeon-Park</a> 
   </td> 
   <td align="center"> 
