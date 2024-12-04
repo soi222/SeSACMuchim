@@ -12,7 +12,7 @@
 ## 📊 데이터셋 구축
 ✅ 데이터 수집
  - 총 데이터 : 10,488개의 이미지 및 라벨 데이터
- - 출처 : AI허브, Roboflow, Mendeley Data
+ - 출처 : [AI허브-부산 항만도로 데이터셋](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=&topMenu=&aihubDataSe=data&dataSetSn=71554), Roboflow, Mendeley Data
  - 다양성 : 날씨, 지역, 시간대, 환경별로 수집된 데이터
 
 ✅ 데이터 전처리
