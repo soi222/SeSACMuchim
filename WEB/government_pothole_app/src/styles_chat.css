@@ -1,0 +1,122 @@
+/* 챗봇 모달 오버레이 */
+.chatbot-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* 챗봇 모달 콘텐츠 */
+.chatbot-modal-content {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  background-color: #f0f0f0; /* 밝은 회색 배경 */
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-height: 80vh;
+}
+
+/* 닫기 버튼 */
+.chatbot-close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* 챗봇 메시지 영역 */
+.chatbot-messages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #ffffff7d;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 챗봇 메시지 스타일 */
+.chatbot-message {
+  max-width: 60%;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  word-wrap: break-word;
+  position: relative;
+}
+
+.bot-message {
+  background-color: #2bc9f5f0;
+  align-self: flex-start;
+  margin-left: 10px;
+}
+
+.user-message {
+  background-color: #fefb0f;
+  align-self: flex-end;
+  margin-right: 10px;
+}
+
+.bot-message::after {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #2bc9f5f0 transparent transparent;
+}
+
+.user-message::after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: 10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent #fefb0f;
+}
+
+/* 챗봇 입력 영역 */
+.chatbot-input-container {
+  display: flex;
+  border-top: 1px solid #000000;
+  background-color: #ffffffc1;
+}
+
+.chatbot-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+}
+
+.chatbot-send-button {
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.chatbot-send-button:hover {
+  background-color: #45a049;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 600px) {
+  .chatbot-modal-content {
+    max-width: 90%;
+  }
+}

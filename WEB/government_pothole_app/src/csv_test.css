@@ -1,0 +1,44 @@
+/* CSV 테이블 기본 스타일 */
+.csv-container table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .csv-container table th,
+  .csv-container table td {
+    border: 1px solid #ddd;
+    padding: 12px; /* 가로 간격 추가 */
+    text-align: center;
+  }
+  
+  .csv-container table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .csv-container {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* 테이블 hover 효과 */
+  .csv-container table tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* 스크롤바 스타일 */
+  .csv-container::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .csv-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+  }
+  
+  .csv-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
