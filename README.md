@@ -9,6 +9,39 @@
 ## 📂 프로젝트 소개
 포트홀은 차량 손상 및 연쇄 사고를 유발하는 주요 원인 중 하나입니다. 본 프로젝트는 YOLOv8을 활용하여 실시간으로 포트홀을 감지하고, 데이터 기반으로 도로 관리 효율성을 증대시키는 AI 솔루션을 제공합니다.
 
+## 👨‍💻 팀원 구성
+<table> 
+ <tr> 
+  <th>박창현</th>
+  <th>박민기</th> 
+  <th>박형준</th> 
+  <th>송지원</th> 
+  <th>위서현</th> 
+ </tr> 
+ <tr> 
+  <td align="center"> 
+   <img src="https://via.placeholder.com/150" width="100" height="100" style="border-radius: 50%;"><br> 
+   <a href="https://github.com/Chang-Hyeon-Park">@Chang-Hyeon-Park</a> 
+  </td> 
+  <td align="center"> 
+   <img src="https://via.placeholder.com/150" width="100" height="100" style="border-radius: 50%;"><br> 
+   <a href="https://github.com/mean71">@mean71</a> 
+  </td> 
+  <td align="center"> 
+   <img src="https://via.placeholder.com/150" width="100" height="100" style="border-radius: 50%;"><br> 
+   <a href="https://github.com/Seajune117">@Seajune117</a> 
+  </td> 
+  <td align="center"> 
+   <img src="https://via.placeholder.com/150" width="100" height="100" style="border-radius: 50%;"><br> 
+   <a href="https://github.com/G1song">@G1song</a> 
+  </td> 
+  <td align="center"> 
+   <img src="https://via.placeholder.com/150" width="100" height="100" style="border-radius: 50%;"><br> 
+   <a href="https://github.com/soi222">@soi222</a> 
+  </td> 
+ </tr> 
+</table>
+
 ## 📊 데이터셋 구축
 ✅ 데이터 수집
  - 총 데이터 : 10,488개의 이미지 및 라벨 데이터
