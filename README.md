@@ -25,10 +25,12 @@
  - YOLOv8: 빠른 처리 속도와 높은 정확도 제공.
  - 평가지표: Precision, Recall, mAP50, mAP50-95.
  - 성능 비교: YOLOv5 대비 mAP50, FPS, Precision/Recall 모두 개선.
+
 ✅ 성능 개선 방법
  - 하이퍼파라미터 튜닝.
  - 데이터 증강 및 리샘플링.
  - 추가 데이터 학습.
+
 ✅ 최종 선정 모델
  - YOLOv8 Large: 작은 물체 검출 및 정확도 우수.
 
