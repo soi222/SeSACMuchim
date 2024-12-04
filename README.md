@@ -4,7 +4,7 @@
 
 ![image](https://github.com/user-attachments/assets/4b4d3b61-62e1-4bb7-b682-cb5c59faa411)
 
-
+<br><br>
 
 ## 🔍 프로젝트 소개
 포트홀은 도로 안전에 심각한 영향을 미치는 주요 문제로, 차량 손상과 연쇄 사고를 유발할 수 있는 위험 요소입니다.  
@@ -13,6 +13,8 @@
 
 우리 팀은 도로 데이터의 다양성과 실제 환경의 특성을 고려한 데이터셋 설계부터 모델 개발, 성능 평가, 그리고 사용자 친화적인 서비스 구현까지 프로젝트 전반을 통합적으로 수행하였습니다.   
 이를 통해 도로 관리 시스템의 효율성을 극대화하고, 사회적 비용을 절감할 수 있는 혁신적인 기술 솔루션을 제안합니다.  
+
+<br><br>
 
 ## 👨‍💻 팀원 구성
 <table> 
@@ -47,6 +49,8 @@
  </tr> 
 </table>
 
+<br><br>
+
 ## 📊 데이터셋 구축
 ✅ 데이터 수집
  - 총 데이터 : 10,488개의 이미지 및 라벨 데이터
@@ -57,6 +61,8 @@
  - 결측치 및 이상치 제거
  - 라벨 포맷 변환  XML, JSON -> YOLO 형식 (\<class>, \<x>, \<y>, \<width>, \<height>)
  - 데이터 분할 : Train/Valid/Test = 7:2:1
+
+<br><br>
 
 ## 🧠 모델 설명
 ✅ 모델 선택 이유
@@ -72,6 +78,8 @@
 ✅ 최종 선정 모델
  - YOLOv8 Large: 작은 물체 검출 및 정확도 우수.
 
+<br><br>
+
 ## 🛠 서비스 구현
 ✅ 주요 기능
  - 포트홀 감지: YOLOv8 기반 감지 및 데이터 저장.
@@ -85,6 +93,8 @@
    - React.js 기반 프론트엔드.
    - Express.js 및 OpenAI API 활용 백엔드.
 
+<br><br>
+
 ## 📈 결과
  - YOLOv8 Large 성능:
    - Precision: 98.8%
@@ -95,12 +105,15 @@
    - Precision, Recall 증가.
    - mAP50-95 개선.
 
+<br><br>
+
 ## 🔧 기술 스택
  - Frontend: React.js, Axios.
  - Backend: Express.js, OpenAI API.
  - ML/DL: YOLOv8, Whisper, GTTS.
  - Cloud: AWS Rekognition.
 
+<br><br>
 
 ## 👨‍💻 팀원
 |이름|역할|분석주제|분석결과|Github|
