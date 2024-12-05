@@ -203,11 +203,11 @@
 
 <br>
 
-## 👨‍💻 팀원
-|이름|역할|분석주제|분석결과|Github|
-|--|--|--|--|--|
-|**박창현**|분석|제작사 중심 영화 흥행 요인 분석|[PPT](./presentation/SeSAC_Movie_data_anlaysis_MJ.pdf)|[Click!](https://github.com/Chang-Hyeon-Park)|
-|**박민기**|분석 및 모델링|영화 키워드와 영화 평점간의 상관관계 분석 <br> 평점 예측 모델 제작|[PPT](./presentation/SeSAC-MiniProject_yugyeongjo.pdf)|[Click!](https://github.com/mean71)|
-|**박형준**|분석|제작사 중심 영화 흥행 요인 분석|[PPT](./presentation/Chang_Movies_Data_PPT.pdf)|[Click!](https://github.com/Seajune117)|
-|**송지원**|분석|영화 산업의 시대별 변화와 트렌드 분석|[PPT](./presentation/SESAC%20MiniProject-DongWoo.pdf.pdf)|[Click!](https://github.com/G1song)|
-|**위서현**|분석|영화 인기도에 영향을 미치는 요인 분석|[PPT](./presentation/SeSAC_Movie_data_anlaysis_soyoun.pdf.pdf)|[Click!](https://github.com/soi222)|
+## 👨‍💻 역할분배
+|이름|역할|상세내용|Github|
+|--|--|--|--|
+|**박창현**|AI모델링|......|[Click!](https://github.com/Chang-Hyeon-Park)|
+|**박민기**|AI모델링|......|[Click!](https://github.com/mean71)|
+|**박형준**|AI모델링|......|[Click!](https://github.com/Seajune117)|
+|**송지원**|AI모델링|......|[Click!](https://github.com/G1song)|
+|**위서현**|AI모델링|......|[Click!](https://github.com/soi222)|
