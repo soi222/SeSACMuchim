@@ -162,27 +162,15 @@
     <td> 
       <ul> 
         <li>
-          <img src="https://github.com/user-attachments/assets/61da9941-ec1e-4f55-a4e6-b8d4b0dc56fc"
-               alt="YOLOv8" 
-               width="50"/> 
           <strong>Object Detection:</strong> YOLOv8 (Large)
         </li> 
         <li>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Whisper_logo.png" 
-               alt="Whisper (OpenAI)" 
-               width="50"/> 
           <strong>Speech-to-Text:</strong> Whisper (OpenAI)
         </li> 
         <li>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Google_Translate_logo.png" 
-               alt="GTTS" 
-               width="50"/> 
           <strong>Text-to-Speech:</strong> GTTS (Google TTS)
         </li> 
         <li>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Amazon_Web_Services_Logo.svg" 
-               alt="AWS Rekognition" 
-               width="50"/> 
           <strong>Privacy Masking:</strong> AWS Rekognition
         </li> 
       </ul> 
@@ -191,10 +179,10 @@
   <tr> 
     <td><strong>Cloud</strong></td> 
     <td> 
-      <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Amazon_Web_Services_Logo.svg" 
+      <img src="https://github.com/user-attachments/assets/c30d97cb-bf50-4201-a86e-bb8ad468d2a0"
            alt="AWS" 
            width="50"/> 
-      AWS Rekognition, S3 
+      AWS Rekognition
     </td> 
   </tr> 
   <tr> 
