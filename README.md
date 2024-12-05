@@ -42,7 +42,7 @@
    <a href="https://github.com/mean71">@mean71</a> 
   </td> 
   <td align="center"> 
-   <img src="https://via.placeholder.com/150" width="100" height="100" style="border-radius: 50%;"><br> 
+   <img src="https://github.com/user-attachments/assets/5f483fa6-a925-4de8-bf1a-19e8d2d8e3c4" width="100" height="100" style="border-radius: 50%;"><br> 
    <a href="https://github.com/Seajune117">@Seajune117</a> 
   </td> 
   <td align="center"> 
