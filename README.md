@@ -139,7 +139,7 @@
     <td> 
       <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" 
            alt="React.js" 
-           width="50"/> 
+           width="50"/>     
       React.js, Axios 
     </td> 
   </tr> 
@@ -162,7 +162,7 @@
     <td> 
       <ul> 
         <li>
-          <img src="https://ultralytics.com/images/yolov8-logo.png" 
+          <img src="https://github.com/user-attachments/assets/61da9941-ec1e-4f55-a4e6-b8d4b0dc56fc"
                alt="YOLOv8" 
                width="50"/> 
           <strong>Object Detection:</strong> YOLOv8 (Large)
