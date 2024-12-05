@@ -128,6 +128,91 @@
  - Cloud: AWS Rekognition.
  - Data Processing : Pandas, Numpy
 
+## 🔧 기술 스택
+<table> 
+  <tr> 
+    <th>분야</th> 
+    <th>사용 기술</th> 
+  </tr> 
+  <tr> 
+    <td><strong>Frontend</strong></td> 
+    <td> 
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" 
+           alt="React.js" 
+           width="50"/> 
+      React.js, Axios 
+    </td> 
+  </tr> 
+  <tr> 
+    <td><strong>Backend</strong></td> 
+    <td> 
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" 
+           alt="Express.js" 
+           width="100"/> 
+      Express.js 
+      <br> 
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/OpenAI_Logo.svg" 
+           alt="OpenAI API" 
+           width="50"/> 
+      OpenAI API 
+    </td> 
+  </tr> 
+  <tr> 
+    <td><strong>ML/DL</strong></td> 
+    <td> 
+      <ul> 
+        <li>
+          <img src="https://ultralytics.com/images/yolov8-logo.png" 
+               alt="YOLOv8" 
+               width="50"/> 
+          <strong>Object Detection:</strong> YOLOv8 (Large)
+        </li> 
+        <li>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Whisper_logo.png" 
+               alt="Whisper (OpenAI)" 
+               width="50"/> 
+          <strong>Speech-to-Text:</strong> Whisper (OpenAI)
+        </li> 
+        <li>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Google_Translate_logo.png" 
+               alt="GTTS" 
+               width="50"/> 
+          <strong>Text-to-Speech:</strong> GTTS (Google TTS)
+        </li> 
+        <li>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Amazon_Web_Services_Logo.svg" 
+               alt="AWS Rekognition" 
+               width="50"/> 
+          <strong>Privacy Masking:</strong> AWS Rekognition
+        </li> 
+      </ul> 
+    </td> 
+  </tr> 
+  <tr> 
+    <td><strong>Cloud</strong></td> 
+    <td> 
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Amazon_Web_Services_Logo.svg" 
+           alt="AWS" 
+           width="50"/> 
+      AWS Rekognition, S3 
+    </td> 
+  </tr> 
+  <tr> 
+    <td><strong>Data Processing</strong></td> 
+    <td> 
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Pandas_logo.svg" 
+           alt="Pandas" 
+           width="50"/> 
+      Pandas 
+      <br> 
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg" 
+           alt="NumPy" 
+           width="50"/> 
+      NumPy 
+    </td> 
+  </tr> 
+</table>
+
 <br><br>
 
 ## 👨‍💻 팀원
