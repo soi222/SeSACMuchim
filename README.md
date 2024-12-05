@@ -151,7 +151,7 @@
            width="100"/> 
       Express.js 
       <br> 
-      <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/OpenAI_Logo.svg" 
+      <img src="https://github.com/user-attachments/assets/43d4fad7-2853-4a8c-80cb-3ff613b177c9" 
            alt="OpenAI API" 
            width="50"/> 
       OpenAI API 
