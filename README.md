@@ -38,7 +38,7 @@
    <a href="https://github.com/Chang-Hyeon-Park">@Chang-Hyeon-Park</a> 
   </td> 
   <td align="center"> 
-   <img src="https://via.placeholder.com/150" width="100" height="100" style="border-radius: 50%;"><br> 
+   <img src="https://github.com/user-attachments/assets/32926237-78f1-4146-8eb9-73c38b6ddfd2" width="100" height="100" style="border-radius: 50%;"><br> 
    <a href="https://github.com/mean71">@mean71</a> 
   </td> 
   <td align="center"> 
