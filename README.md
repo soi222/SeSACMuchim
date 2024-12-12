@@ -80,7 +80,6 @@
 # Directory structure for Pothole Detection Project
 
 SeSACMuchim-1/
-SeSACMuchim-1/
 ├── directory.py
 ├── README.md
 ├── .git/
@@ -116,17 +115,9 @@ SeSACMuchim-1/
 │   │   │   │   └── weights/
 │   │   │   │       └── best.pt
 │   │   │   ├── yolov5m_test/
-│   │   │   │   └── (same structure as yolov5l_test)
 │   │   │   ├── yolov5n_test/
-│   │   │   │   └── (same structure as yolov5l_test)
 │   │   │   ├── yolov5s_test/
-│   │   │   │   └── (same structure as yolov5l_test)
 │   │   │   └── yolov5_test_pt/
-│   │   │       ├── yolov5l.pt
-│   │   │       ├── yolov5m.pt
-│   │   │       ├── yolov5n.pt
-│   │   │       ├── yolov5s.pt
-│   │   │       └── yolov8n.pt
 │   │   └── yolov8/
 │   │       ├── etc/
 │   │       │   ├── yolov8l_pothole_8K.yaml
@@ -137,13 +128,7 @@ SeSACMuchim-1/
 │   │       │   ├── yolov8l_pothole_10K.yaml
 │   │       │   └── results/
 │   │       ├── yolov8l_8K/
-│   │       │   └── (similar structure as yolov8l_10K_hpt_ver/results)
 │   │       └── yolov8_test_pt/
-│   │           ├── yolo11n.pt
-│   │           ├── yolov8l.pt
-│   │           ├── yolov8m.pt
-│   │           ├── yolov8n.pt
-│   │           └── yolov8s.pt
 ├── PrivacyMasking/
 │   ├── CarPlateBlurring.py
 │   ├── FaceBlurring.py
@@ -155,19 +140,12 @@ SeSACMuchim-1/
 ├── TEST/
 │   ├── YOLOv5_test/
 │   └── YOLOv8_test/
-│       ├── yolo8l_test.ipynb
-│       ├── yolo8n_test.ipynb
-│       ├── yolo8s_test.ipynb
-│       ├── yolo8xl_test.ipynb
-│       ├── yolov8l_30K.ipynb
+│       ├── yolov8l_10K.ipynb
 │       └── yolov8l_8K.ipynb
 ├── WEB/
 │   ├── government_pothole_app/
 │   │   ├── .gitignore
-│   │   ├── package-lock.json
-│   │   ├── package.json
 │   │   ├── README.md
-│   │   ├── test2.py
 │   │   ├── public/
 │   │   │   ├── test_csv.csv
 │   │   ├── src/
@@ -181,9 +159,6 @@ SeSACMuchim-1/
 │   │   │   └── styles.css
 │   └── pothole_app/
 │       ├── .gitignore
-│       ├── package-lock.json
-│       ├── package.json
-│       ├── README.md
 │       ├── src/
 │       │   ├── App.css
 │       │   ├── App.js
