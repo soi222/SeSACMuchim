@@ -21,6 +21,25 @@
 
 <br>
 
+## 🔧 기술 스택
+ - **Frontend**<br>
+   <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white">
+   <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=Axios&logoColor=white">
+ - **Backend**<br>
+   <img src="https://img.shields.io/badge/express-FF4747?style=for-the-badge&logo=express&logoColor=white">
+   <img src="https://img.shields.io/badge/openAI API-412991?style=for-the-badge&logo=openai&logoColor=white">
+ - **ML / DL**<br>
+   <img src="https://img.shields.io/badge/YOLOv8-5C3EE8?style=for-the-badge&logo=YOLOv8&logoColor=white">
+   <img src="https://img.shields.io/badge/Whisper-6332F6?style=for-the-badge&logo=Whisper&logoColor=white">
+   <img src="https://img.shields.io/badge/GTTS-4285F4?style=for-the-badge&logo=google&logoColor=white">
+ - **Cloud**<br>
+   <img src="https://img.shields.io/badge/AWS Rekognition-FF9900?style=for-the-badge&logo=AWS Rekognition&logoColor=black">
+ - **Data Processing** <br>
+   <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white">
+   <img src="https://img.shields.io/badge/numpy-013243?style=for-the-badge&logo=numpy&logoColor=white">
+
+<br>
+
 ## 👨‍💻 팀원 구성
 <table> 
  <tr> 
@@ -85,22 +104,7 @@
 
 <br>
 
-## 🔧 기술 스택
- - **Frontend**<br>
-   <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white">
-   <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=Axios&logoColor=white">
- - **Backend**<br>
-   <img src="https://img.shields.io/badge/express-FF4747?style=for-the-badge&logo=express&logoColor=white">
-   <img src="https://img.shields.io/badge/openAI API-412991?style=for-the-badge&logo=openai&logoColor=white">
- - **ML / DL**<br>
-   <img src="https://img.shields.io/badge/YOLOv8-5C3EE8?style=for-the-badge&logo=YOLOv8&logoColor=white">
-   <img src="https://img.shields.io/badge/Whisper-6332F6?style=for-the-badge&logo=Whisper&logoColor=white">
-   <img src="https://img.shields.io/badge/GTTS-4285F4?style=for-the-badge&logo=google&logoColor=white">
- - **Cloud**<br>
-   <img src="https://img.shields.io/badge/AWS Rekognition-FF9900?style=for-the-badge&logo=AWS Rekognition&logoColor=black">
- - **Data Processing** <br>
-   <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white">
-   <img src="https://img.shields.io/badge/numpy-013243?style=for-the-badge&logo=numpy&logoColor=white">
+
 
 ## 🔧 기술 스택
 <table> 
