@@ -67,7 +67,7 @@
    <a href="https://github.com/G1song">@G1song</a> 
   </td> 
   <td align="center"> 
-   <img src="![제목_없는_아트워크 (1)](https://github.com/user-attachments/assets/a5135ef2-86f4-4748-bd27-a1500240ced5)" width="100" height="100" style="border-radius: 50%;"><br> 
+   <img src="https://github.com/user-attachments/assets/a5135ef2-86f4-4748-bd27-a1500240ced5" width="100" height="100" style="border-radius: 50%;"><br> 
    <a href="https://github.com/soi222">@soi222</a> 
   </td> 
  </tr> 
