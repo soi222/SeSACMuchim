@@ -106,6 +106,13 @@
  - UI/UX:
    - React.js 기반 프론트엔드.
    - Express.js 및 OpenAI API 활용 백엔드.
+   
+|YOLOv8 기반 포트홀 감지| 프라이버시 보호 (1) | 프라이버시 보호 (2)|
+|:---:|:---:|:---:|
+|감지 및 데이터 저장<br>|얼굴 블러링: Deface, ORB-HD.| 차량 번호판 블러링: Amazon Rekognition API.|
+|STT/TTS|UI|UX|
+|**STT**: Whisper (OpenAI).<br>**TTS**: Google TTS.<br>![whisper](https://github.com/user-attachments/assets/b675091d-b7e4-45db-b376-6dbb88bde092) <br> ![google_tts](https://github.com/user-attachments/assets/5ef3c566-9333-44d0-a8c5-656a139c1bd7)
+|React.js 기반 프론트엔드 <br> |Express.js 및 OpenAI API 활용 백엔드.|
 
 <br>
 
