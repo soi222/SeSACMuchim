@@ -105,7 +105,7 @@
 
 <br>
 
-## 📂directory structure
+## 📂디렉토리 구조
 ```
 # Directory structure for Pothole Detection Project
 
@@ -191,6 +191,7 @@ SeSACMuchim-1/
             │   └── TransferredVideosPage.js
             └── styles.css
 ```
+<br>
 
 ## 👨‍💻 역할분배
 |이름|역할|상세내용|Github|
