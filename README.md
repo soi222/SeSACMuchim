@@ -1,9 +1,9 @@
 # 📸 Pothole Detection Project
 
-> 도로 품질 관리를 위한 포트홀 검출 AI 시스템
-
-![image](https://github.com/user-attachments/assets/4b4d3b61-62e1-4bb7-b682-cb5c59faa411)
-
+### 도로 품질 관리를 위한 포트홀 검출 AI 시스템
+<img src="https://github.com/user-attachments/assets/42b4685e-52db-4ead-b740-4e9e3ce48345" width="200" height="200">
+<img src="https://github.com/user-attachments/assets/c041572f-06e2-411b-92e7-615e208485a3" width="200" height="200">
+<img src="https://github.com/user-attachments/assets/951b116e-7311-4086-b784-1c26b275353b" width="200" height="200">
 <br>
 
 ## 🔍 프로젝트 소개
@@ -173,12 +173,12 @@ SeSACMuchim-1/
 
 ## 🛠 서비스 구현   
 | 항목 | 설명 |
-|:---|:---|
-| **YOLOv8 기반 포트홀 감지**<br>감지 및 데이터 저장 | <img src="https://github.com/user-attachments/assets/ae523bf9-e6c2-4f42-8b64-3335cbfd272f" width="650" height="300">|
-| **프라이버시 보호**<br>얼굴 블러링 (Deface, ORB-HD)<br>차량 번호판 블러링 (Amazon Rekognition API) | <img src="https://github.com/user-attachments/assets/cc5a1d64-d602-4174-b607-af783bf77207" width="650" height="300">|
-| **STT / TTS**<br>STT (Whisper (OpenAI)), TTS (Google TTS) | <figure class="half">  <a href="link"><img src="https://github.com/user-attachments/assets/b675091d-b7e4-45db-b376-6dbb88bde092"></a>  <a href="link"><img src="https://github.com/user-attachments/assets/5ef3c566-9333-44d0-a8c5-656a139c1bd7"></a></figure>|
-| **UI & UX : 사용자 화면** <br>React.js 프론트엔드, Express.js 백엔드 |<img src="https://github.com/user-attachments/assets/22edae6c-125e-41ac-9332-478677e39511" width="650" height="300"><img src="![마이페이지](https://github.com/user-attachments/assets/71fa1f86-c667-49e9-8ab6-c6b11cc34016)" width="650" height="300">|
-| **UI & UX (관리자 화면)**<br>포트홀 탐지 통계 및 LLM 기반 챗봇 |<img src="https://github.com/user-attachments/assets/5093a98f-66b3-4e51-9555-39a16a49fae4" width="650" height="300"> <br> <img src="" width="650" height="300">|
+|:---:|:---:|
+| **YOLOv8 기반 포트홀 감지**<br><br>감지 및 데이터 저장 | <img src="https://github.com/user-attachments/assets/ae523bf9-e6c2-4f42-8b64-3335cbfd272f" width="650" height="300">|
+| **프라이버시 보호**<br><br>얼굴 블러링 (Deface, ORB-HD)<br>차량 번호판 블러링<br>(Amazon Rekognition API) | <img src="https://github.com/user-attachments/assets/cc5a1d64-d602-4174-b607-af783bf77207" width="650" height="300">|
+| **STT / TTS**<br><br>STT (Whisper (OpenAI))<br> TTS (Google TTS) | <figure class="half">  <a href="link"><img src="https://github.com/user-attachments/assets/b675091d-b7e4-45db-b376-6dbb88bde092"></a>  <a href="link"><img src="https://github.com/user-attachments/assets/5ef3c566-9333-44d0-a8c5-656a139c1bd7"></a></figure>|
+| **UI & UX : 사용자 화면** <br><br>React.js 프론트엔드,<br> Express.js 백엔드 |<img src="https://github.com/user-attachments/assets/22edae6c-125e-41ac-9332-478677e39511" width="650" height="300"> <br> <img src="https://github.com/user-attachments/assets/71fa1f86-c667-49e9-8ab6-c6b11cc34016" width="650" height="300">|
+| **UI & UX : 관리자 화면** <br><br>LLM 분석 및 포트홀 탐지 통계,<br> LLM 기반 챗봇 |<img src="https://github.com/user-attachments/assets/5093a98f-66b3-4e51-9555-39a16a49fae4" width="650" height="300"> <br> <img src="https://github.com/user-attachments/assets/e6932678-f3df-47f7-9ec0-720f983908f7" width="650" height="300">|
 
 <br>
 
