@@ -7,19 +7,17 @@
 <br>
 
 ## 🔍 프로젝트 소개
-포트홀은 도로 안전에 심각한 영향을 미치는 주요 문제로, 차량 손상과 연쇄 사고를 유발할 수 있는 위험 요소입니다.  
-특히, 고속도로와 같은 환경에서는 작은 포트홀도 대형 사고로 이어질 가능성이 높아 그 심각성은 더욱 부각됩니다.  
-이에 따라, 본 프로젝트는 딥러닝 기반 **YOLOv8(Object Detection 모델)** 을 활용하여 실시간 포트홀 감지 시스템을 구축하는 것을 목표로 했습니다.  
-
-우리 팀은 도로 데이터의 다양성과 실제 환경의 특성을 고려한 데이터셋 설계부터 모델 개발, 성능 평가, 그리고 사용자 친화적인 서비스 구현까지 프로젝트 전반을 통합적으로 수행하였습니다.   
-이를 통해 도로 관리 시스템의 효율성을 극대화하고, 사회적 비용을 절감할 수 있는 혁신적인 기술 솔루션을 제안합니다.  
+**포트홀(Pothole)** : 도로 균열에 물기가 스며들어 도로가 부서지고 파이는 현상 <br><br>
+포트홀로 인해 차량 손상, 연쇄 사고 유발 및 안전 위협이 발생할 수 있으며, 2021-24년 7월 포트홀 1만 9천건으로 매년 증가하고 있습니다.이에 따라, 본 프로젝트는 딥러닝 기반 **YOLOv8(Object Detection 모델)** 을 활용하여 실시간 포트홀 감지 시스템을 구축하는 것을 목표로 합니다.  
+우리 팀은 도로 데이터의 다양성과 실제 환경의 특성을 고려한 데이터셋 설계부터 모델 개발, 성능 평가, 그리고 사용자 친화적인 서비스 구현까지 프로젝트 전반을 통합적으로 수행하였습니다.
+이를 통해 도로 관리 시스템의 효율성을 극대화하고, 사회적 비용을 절감할 수 있는 혁신적인 기술 솔루션을 제안하고자 합니다.  
 
 <br>
 
 ## 🛠 프로젝트 목표
-◎ 실시간 포트홀 탐지: YOLOv8을 활용한 정확도 높은 Object Detection.  
-◎ 데이터 기반 도로 관리: 포트홀 위험도 분석 및 효율적인 도로 유지보수 계획 지원.  
-◎ 사용자 참여 증대: 음성 입력 및 리워드 제공을 통해 도로 안전에 대한 참여 유도.  
+◎ 실시간 포트홀 탐지<br>YOLOv8을 활용한 정확도 높은 Object Detection.<br><br>
+◎ 데이터 기반 도로 관리<br>포트홀 위험도 분석 및 효율적인 도로 유지보수 계획 지원.<br><br>
+◎ 사용자 참여 증대<br>음성 입력 및 리워드 제공을 통해 도로 안전에 대한 참여 유도.<br><br>
 
 <br>
 
@@ -76,43 +74,19 @@
 <br>
 
 ## 🧠 모델 설명
-✅ 선정 모델 : YOLOv8 Large
+✅ 선정 모델 : [YOLOv8 Large](https://docs.ultralytics.com/ko/models/yolov8/)
  - YOLOv8의 **End-to-End** 신경망은 이미지 전체를 한 번에 처리
  - 빠른 처리 속도와 높은 정확도 제공
  - 특히, **소형 객체 탐지**에 탁월한 성능 보임
 
-✅ 성능 지표
- - Precision : 98.8%
- - Recall : 91.8%
- - mAP50 : 99.1%
- - FPS : 50
-
-✅ 성능 개선 전략
- - 하이퍼파라미터 튜닝 : 학습률, 배치 크기 등 최적화
- - 데이터 증강 및 리샘플링 : 특정 조건에서의 데이터 추가 학습
- - NMS(Non-Maximum Suppression) 설정 조정.
-
 <br>
 
-## 🛠 서비스 구현
-✅ 주요 기능
- - 포트홀 감지: YOLOv8 기반 감지 및 데이터 저장.
- - 프라이버시 보호:
-   - 얼굴 블러링: Deface, ORB-HD.
-   - 차량 번호판 블러링: Amazon Rekognition API.
- - STT/TTS:
-   - STT: Whisper (OpenAI).
-   - TTS: Google TTS.
- - UI/UX:
-   - React.js 기반 프론트엔드.
-   - Express.js 및 OpenAI API 활용 백엔드.
-   
-|YOLOv8 기반 포트홀 감지| 프라이버시 보호 (1) | 프라이버시 보호 (2)|
+## 🛠 서비스 구현   
+|YOLOv8 기반<br>포트홀 감지| 프라이버시 보호 (1) <br>: 얼굴 블러링 | 프라이버시 보호 (2) <br>: 차량 번호판 블러링|
 |:---:|:---:|:---:|
-|감지 및 데이터 저장<br>|얼굴 블러링: Deface, ORB-HD.| 차량 번호판 블러링: Amazon Rekognition API.|
-|STT/TTS|UI|UX|
-|**STT**: Whisper (OpenAI).<br>**TTS**: Google TTS.<br>![whisper](https://github.com/user-attachments/assets/b675091d-b7e4-45db-b376-6dbb88bde092) <br> ![google_tts](https://github.com/user-attachments/assets/5ef3c566-9333-44d0-a8c5-656a139c1bd7)
-|React.js 기반 프론트엔드 <br> |Express.js 및 OpenAI API 활용 백엔드.|
+|감지 및 데이터 저장<br>![yolo8(1)](https://github.com/user-attachments/assets/efe70d2b-011e-4f75-b6ab-fd1f5ddd6767) <br> ![yolo8(2)](https://github.com/user-attachments/assets/2cb85b7c-a992-471e-b030-f0eb3ac9dd3d)|Deface, ORB-HD.<br>![blur](https://github.com/user-attachments/assets/729463b0-9bd8-4a8b-86c2-a5822e52667b)|Amazon Rekognition API<br>![차량](https://github.com/user-attachments/assets/b6726cd9-5afc-46dc-8f04-f38f1b39f724)|
+|STT / TTS| UI & UX||
+|**STT** (Whisper (OpenAI))<br>![whisper](https://github.com/user-attachments/assets/b675091d-b7e4-45db-b376-6dbb88bde092) <br><br> **TTS** (Google TTS)<br>![google_tts](https://github.com/user-attachments/assets/5ef3c566-9333-44d0-a8c5-656a139c1bd7)|React.js 기반 프론트엔드<br>Express.js 및 OpenAI API 활용 백엔드. <br><br> **사용자 화면** <br>![소비자](https://github.com/user-attachments/assets/d336f8ce-0ed2-44bc-ab38-329916981200) <br><br> **포트홀 탐지 및 전송** ![포트홀탐지전송](https://github.com/user-attachments/assets/0bd8696b-8e9f-4aaf-a2ce-07962215791c) <br><br> **마이페이지 화면** ![마이페이지](https://github.com/user-attachments/assets/00cef2ae-a6fc-488c-9240-2357dbf6ae64)|**관리자 화면** <br>![포트홀 검출 시연](https://github.com/user-attachments/assets/0b33c121-430e-4223-bd4c-a832c641b729) <br><br> **포트홀 탐지 통계 화면** ![대시보드(2)](https://github.com/user-attachments/assets/a427d32c-18c2-4d04-82ac-b0ee39803202) <br><br> **LLM 기반 챗봇 화면** <br> ![LLM기반](https://github.com/user-attachments/assets/0d74d8ff-a655-46ea-89ac-101ae7282263) |
 
 <br>
 
@@ -129,11 +103,21 @@
 <br>
 
 ## 🔧 기술 스택
- - Frontend: React.js, Axios.
- - Backend: Express.js, OpenAI API.
- - ML/DL: YOLOv8, Whisper, GTTS.
- - Cloud: AWS Rekognition.
- - Data Processing : Pandas, Numpy
+ - **Frontend**<br>
+   <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white">
+   <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=Axios&logoColor=white">
+ - **Backend**<br>
+   <img src="https://img.shields.io/badge/express-FF4747?style=for-the-badge&logo=express&logoColor=white">
+   <img src="https://img.shields.io/badge/openAI API-412991?style=for-the-badge&logo=openai&logoColor=white">
+ - **ML / DL**<br>
+   <img src="https://img.shields.io/badge/YOLOv8-5C3EE8?style=for-the-badge&logo=YOLOv8&logoColor=white">
+   <img src="https://img.shields.io/badge/Whisper-6332F6?style=for-the-badge&logo=Whisper&logoColor=white">
+   <img src="https://img.shields.io/badge/GTTS-4285F4?style=for-the-badge&logo=google&logoColor=white">
+ - **Cloud**<br>
+   <img src="https://img.shields.io/badge/AWS Rekognition-FF9900?style=for-the-badge&logo=AWS Rekognition&logoColor=black">
+ - **Data Processing** <br>
+   <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white">
+   <img src="https://img.shields.io/badge/numpy-013243?style=for-the-badge&logo=numpy&logoColor=white">
 
 ## 🔧 기술 스택
 <table> 
