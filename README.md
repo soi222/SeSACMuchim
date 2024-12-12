@@ -80,10 +80,6 @@
 # Directory structure for Pothole Detection Project
 
 SeSACMuchim-1/
-├── directory.py
-├── README.md
-├── .git/
-├── .vscode/
 ├── DL/
 │   ├── Dataset/
 │   │   ├── CSV/
@@ -120,20 +116,15 @@ SeSACMuchim-1/
 │   │   │   └── yolov5_test_pt/
 │   │   └── yolov8/
 │   │       ├── etc/
-│   │       │   ├── yolov8l_pothole_8K.yaml
-│   │       │   └── yolov8_pothole.yaml
 │   │       ├── yolov8l_10K_hpt_ver/
 │   │       │   ├── custom_args.yaml
 │   │       │   ├── yolo8l_10K_hpt_ver.ipynb
 │   │       │   ├── yolov8l_pothole_10K.yaml
 │   │       │   └── results/
-│   │       ├── yolov8l_8K/
-│   │       └── yolov8_test_pt/
+│   │       └── yolov8l_8K/
 ├── PrivacyMasking/
 │   ├── CarPlateBlurring.py
-│   ├── FaceBlurring.py
-│   ├── CarPlate_test_img/
-│   └── Face_test_img/
+│   └── FaceBlurring.py
 ├── STTTTS/
 │   ├── STTTTS_Final.py
 │   ├── test/
@@ -144,8 +135,6 @@ SeSACMuchim-1/
 │       └── yolov8l_8K.ipynb
 ├── WEB/
 │   ├── government_pothole_app/
-│   │   ├── .gitignore
-│   │   ├── README.md
 │   │   ├── public/
 │   │   │   ├── test_csv.csv
 │   │   ├── src/
@@ -158,7 +147,6 @@ SeSACMuchim-1/
 │   │   │   ├── index.js
 │   │   │   └── styles.css
 │   └── pothole_app/
-│       ├── .gitignore
 │       ├── src/
 │       │   ├── App.css
 │       │   ├── App.js
@@ -172,7 +160,6 @@ SeSACMuchim-1/
 │       │   │   ├── RewardCheckPage.js
 │       │   │   └── TransferredVideosPage.js
 │       │   └── styles.css
-
 ```
 
 
