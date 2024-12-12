@@ -252,12 +252,6 @@ SeSACMuchim-1/
 <br>
 
 ## 🛠 서비스 구현   
-|YOLOv8 기반<br>포트홀 감지| 프라이버시 보호 (1) <br>: 얼굴 블러링 | 프라이버시 보호 (2) <br>: 차량 번호판 블러링|
-|:---:|:---:|:---:|
-|감지 및 데이터 저장<br>![yolo8(1)](https://github.com/user-attachments/assets/efe70d2b-011e-4f75-b6ab-fd1f5ddd6767) <br> ![yolo8(2)](https://github.com/user-attachments/assets/2cb85b7c-a992-471e-b030-f0eb3ac9dd3d)|Deface, ORB-HD.<br>![blur](https://github.com/user-attachments/assets/729463b0-9bd8-4a8b-86c2-a5822e52667b)|Amazon Rekognition API<br>![차량](https://github.com/user-attachments/assets/b6726cd9-5afc-46dc-8f04-f38f1b39f724)|
-|STT / TTS| UI & UX||
-|**STT** (Whisper (OpenAI))<br>![whisper](https://github.com/user-attachments/assets/b675091d-b7e4-45db-b376-6dbb88bde092) <br><br> **TTS** (Google TTS)<br>![google_tts](https://github.com/user-attachments/assets/5ef3c566-9333-44d0-a8c5-656a139c1bd7)|React.js 기반 프론트엔드<br>Express.js 및 OpenAI API 활용 백엔드. <br><br> **사용자 화면** <br>![소비자](https://github.com/user-attachments/assets/d336f8ce-0ed2-44bc-ab38-329916981200) <br><br> **포트홀 탐지 및 전송** ![포트홀탐지전송](https://github.com/user-attachments/assets/0bd8696b-8e9f-4aaf-a2ce-07962215791c) <br><br> **마이페이지 화면** ![마이페이지](https://github.com/user-attachments/assets/00cef2ae-a6fc-488c-9240-2357dbf6ae64)|**관리자 화면** <br>![포트홀 검출 시연](https://github.com/user-attachments/assets/0b33c121-430e-4223-bd4c-a832c641b729) <br><br> **포트홀 탐지 통계 화면** ![대시보드(2)](https://github.com/user-attachments/assets/a427d32c-18c2-4d04-82ac-b0ee39803202) <br><br> **LLM 기반 챗봇 화면** <br> ![LLM기반](https://github.com/user-attachments/assets/0d74d8ff-a655-46ea-89ac-101ae7282263) |
-
 | YOLOv8 설명 | 이미지 |
 |:---|:---|
 | **YOLOv8 기반 포트홀 감지**<br>감지 및 데이터 저장 | ![yolo8](https://github.com/user-attachments/assets/ae523bf9-e6c2-4f42-8b64-3335cbfd272f)|
@@ -267,6 +261,16 @@ SeSACMuchim-1/
 | **UI & UX (사용자 화면)**<br>React.js 프론트엔드, Express.js 백엔드 | ![사용자 화면](https://github.com/user-attachments/assets/d336f8ce-0ed2-44bc-ab38-329916981200) <br> ![포트홀 탐지 및 전송](https://github.com/user-attachments/assets/0bd8696b-8e9f-4aaf-a2ce-07962215791c) <br> ![마이페이지 화면](https://github.com/user-attachments/assets/00cef2ae-a6fc-488c-9240-2357dbf6ae64) |
 | **UI & UX (관리자 화면)**<br>포트홀 탐지 통계 및 LLM 기반 챗봇 | ![포트홀 검출 시연](https://github.com/user-attachments/assets/0b33c121-430e-4223-bd4c-a832c641b729) <br> ![포트홀 탐지 통계](https://github.com/user-attachments/assets/a427d32c-18c2-4d04-82ac-b0ee39803202) <br> ![LLM 기반 챗봇](https://github.com/user-attachments/assets/0d74d8ff-a655-46ea-89ac-101ae7282263) |
 
+| YOLOv8 설명 | 이미지 |
+|:---|:---|
+| **YOLOv8 기반 포트홀 감지**<br>감지 및 데이터 저장 | <img src="https://github.com/user-attachments/assets/ae523bf9-e6c2-4f42-8b64-3335cbfd272f" width="650" height="300">|
+| **프라이버시 보호 (1)**<br>얼굴 블러링 (Deface, ORB-HD) | <img src="https://github.com/user-attachments/assets/729463b0-9bd8-4a8b-86c2-a5822e52667b" width="650" height="300"> |
+| **프라이버시 보호 (2)**<br>차량 번호판 블러링 (Amazon Rekognition API) | <img src="https://github.com/user-attachments/assets/b6726cd9-5afc-46dc-8f04-f38f1b39f724" width="650" height="300">|
+
+| **STT / TTS**<br>STT (Whisper (OpenAI)), TTS (Google TTS) | <figure class="half">  <a href="link"><img src="https://github.com/user-attachments/assets/b675091d-b7e4-45db-b376-6dbb88bde092"></a>  <a href="link"><img src="이미지경로"></a>  <figcaption>2개이미지.</figcaption></figure>
+<img src="https://github.com/user-attachments/assets/b675091d-b7e4-45db-b376-6dbb88bde092" width="650" height="300">| <br> ![Google TTS](https://github.com/user-attachments/assets/5ef3c566-9333-44d0-a8c5-656a139c1bd7) |
+| **UI & UX (사용자 화면)**<br>React.js 프론트엔드, Express.js 백엔드 | ![사용자 화면](https://github.com/user-attachments/assets/d336f8ce-0ed2-44bc-ab38-329916981200) <br> ![포트홀 탐지 및 전송](https://github.com/user-attachments/assets/0bd8696b-8e9f-4aaf-a2ce-07962215791c) <br> ![마이페이지 화면](https://github.com/user-attachments/assets/00cef2ae-a6fc-488c-9240-2357dbf6ae64) |
+| **UI & UX (관리자 화면)**<br>포트홀 탐지 통계 및 LLM 기반 챗봇 | ![포트홀 검출 시연](https://github.com/user-attachments/assets/0b33c121-430e-4223-bd4c-a832c641b729) <br> ![포트홀 탐지 통계](https://github.com/user-attachments/assets/a427d32c-18c2-4d04-82ac-b0ee39803202) <br> ![LLM 기반 챗봇](https://github.com/user-attachments/assets/0d74d8ff-a655-46ea-89ac-101ae7282263) |
 
 <br>
 
