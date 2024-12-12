@@ -80,48 +80,25 @@
 # Directory structure for Pothole Detection Project
 
 SeSACMuchim-1/
+SeSACMuchim-1/
 ├── directory.py
 ├── README.md
 ├── .git/
 ├── .vscode/
-│   └── settings.json
 ├── DL/
 │   ├── Dataset/
-│   │   ├── Convert_to_txt.ipynb
-│   │   ├── Data_Length.ipynb
-│   │   ├── Data_Merge.ipynb
-│   │   ├── Data_Merge_sh.ipynb
-│   │   ├── match.py
-│   │   ├── Merge_Busan_Dataset.ipynb
-│   │   ├── random_road_info.py
-│   │   ├── seoul_roads.py
-│   │   ├── seoul_roads_reduced.py
-│   │   ├── sorting.py
-│   │   ├── sync_check.ipynb
-│   │   ├── train_valid_split_8163.ipynb
-│   │   ├── VITVEL_to_txt.ipynb
+│   │   ├── CSV/
 │   │   ├── Detection/
-│   │   │   ├── Detection_a_image.py
-│   │   │   ├── Detection_images_and_counting.py
-│   │   │   ├── detection_used_yoloonnx_count.py
-│   │   │   └── test_image_cut.py
-│   │   └── images_processing/
-│   │       ├── 1.Classification_category_id.py
-│   │       ├── 2-2.folder_resize.py
-│   │       ├── 2.convert_bbox_to_yolo.py
-│   │       ├── 3.Detection_image.py
-│   │       └── image_cut_minkii.py
-│   ├── Preprocessor_United/
-│   │   ├── A1_to_yolov5_conv.ipynb
-│   │   ├── A2_XML_conv.ipynb
-│   │   ├── A3_JSON_conv.ipynb
-│   │   ├── A4_D40(JSON).ipynb
-│   │   ├── ABC.ipynb
-│   │   ├── B_class_div.ipynb
-│   │   └── C_class_check.ipynb
+│   │   ├── images_processing/
+│   │   │   ├── Inspection/
+│   │   │   │   ├── Convert_to_txt.ipynb
+│   │   │   │   ├── Data_Length.ipynb
+│   │   │   │   ├── sync_check.ipynb
+│   │   │   │   └── train_valid_split_8163.ipynb
+│   │   │   ├── Merge/
+│   │   │   │   ├── Data_Merge.ipynb
+│   │   │   └── Preprocessor_United/
 │   ├── LLM/
-│   │   ├── LLM_test2_241122.ipynb
-│   │   ├── LLM_test3_241125.ipynb
 │   │   ├── LLM_test_241122.ipynb
 │   │   └── RAG_address.ipynb
 │   ├── Models/
@@ -136,9 +113,14 @@ SeSACMuchim-1/
 │   │   │   │   ├── pothole_8K.yaml
 │   │   │   │   └── requirements.txt
 │   │   │   ├── yolov5l_test/
+│   │   │   │   └── weights/
+│   │   │   │       └── best.pt
 │   │   │   ├── yolov5m_test/
+│   │   │   │   └── (same structure as yolov5l_test)
 │   │   │   ├── yolov5n_test/
+│   │   │   │   └── (same structure as yolov5l_test)
 │   │   │   ├── yolov5s_test/
+│   │   │   │   └── (same structure as yolov5l_test)
 │   │   │   └── yolov5_test_pt/
 │   │   │       ├── yolov5l.pt
 │   │   │       ├── yolov5m.pt
@@ -154,6 +136,8 @@ SeSACMuchim-1/
 │   │       │   ├── yolo8l_10K_hpt_ver.ipynb
 │   │       │   ├── yolov8l_pothole_10K.yaml
 │   │       │   └── results/
+│   │       ├── yolov8l_8K/
+│   │       │   └── (similar structure as yolov8l_10K_hpt_ver/results)
 │   │       └── yolov8_test_pt/
 │   │           ├── yolo11n.pt
 │   │           ├── yolov8l.pt
@@ -164,29 +148,12 @@ SeSACMuchim-1/
 │   ├── CarPlateBlurring.py
 │   ├── FaceBlurring.py
 │   ├── CarPlate_test_img/
-│   │   ├── car_plate_1.png
-│   │   ├── car_plate_2.png
-│   │   └── car_plate_3.png
 │   └── Face_test_img/
-│       └── face_test_img_1.png
 ├── STTTTS/
-│   ├── connect_test.py
-│   ├── google_gtts.py
-│   ├── TTS.ipynb
-│   └── use_wave.py
+│   ├── STTTTS_Final.py
+│   ├── test/
 ├── TEST/
 │   ├── YOLOv5_test/
-│   │   ├── yolov5l_8K.ipynb
-│   │   ├── yolov5l_test.ipynb
-│   │   ├── yolov5m_test.ipynb
-│   │   ├── yolov5s_test.ipynb
-│   │   ├── yolov5x_test.ipynb
-│   │   └── plt/
-│   │       ├── YOLOv5_mAP0.5.png
-│   │       ├── YOLOv5_mAP0.95.png
-│   │       ├── YOLOv5_precision.png
-│   │       ├── YOLOv5_recall.png
-│   │       └── [plt] YOLOv5_Confusion_mAP.ipynb
 │   └── YOLOv8_test/
 │       ├── yolo8l_test.ipynb
 │       ├── yolo8n_test.ipynb
@@ -202,17 +169,8 @@ SeSACMuchim-1/
 │   │   ├── README.md
 │   │   ├── test2.py
 │   │   ├── public/
-│   │   │   ├── favicon.ico
-│   │   │   ├── final_csv.csv
-│   │   │   ├── index.html
-│   │   │   ├── logo192.png
-│   │   │   ├── logo512.png
-│   │   │   ├── manifest.json
-│   │   │   ├── robots.txt
 │   │   │   ├── test_csv.csv
-│   │   │   └── test_csv_jiwon.csv
 │   │   ├── src/
-│   │   │   ├── App copy.js
 │   │   │   ├── App.css
 │   │   │   ├── App.js
 │   │   │   ├── components/
