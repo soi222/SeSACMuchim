@@ -133,33 +133,33 @@ SeSACMuchim-1/
 │   └── YOLOv8_test/
 │       ├── yolov8l_10K.ipynb
 │       └── yolov8l_8K.ipynb
-├── WEB/
-│   ├── government_pothole_app/
-│   │   ├── public/
-│   │   │   ├── test_csv.csv
-│   │   ├── src/
-│   │   │   ├── App.css
-│   │   │   ├── App.js
-│   │   │   ├── components/
-│   │   │   │   ├── ImageStep.js
-│   │   │   │   └── VideoUploader.js
-│   │   │   ├── index.css
-│   │   │   ├── index.js
-│   │   │   └── styles.css
-│   └── pothole_app/
-│       ├── src/
-│       │   ├── App.css
-│       │   ├── App.js
-│       │   ├── components/
-│       │   │   └── ProgressBar.js
-│       │   ├── pages/
-│       │   │   ├── MainPage.js
-│       │   │   ├── MyPage.js
-│       │   │   ├── PointStatusPage.js
-│       │   │   ├── PotholeDetectionPage.js
-│       │   │   ├── RewardCheckPage.js
-│       │   │   └── TransferredVideosPage.js
-│       │   └── styles.css
+└── WEB/
+    ├── government_pothole_app/
+    │   ├── public/
+    │   │   ├── test_csv.csv
+    │   ├── src/
+    │   │   ├── App.css
+    │   │   ├── App.js
+    │   │   ├── components/
+    │   │   │   ├── ImageStep.js
+    │   │   │   └── VideoUploader.js
+    │   │   ├── index.css
+    │   │   ├── index.js
+    │   │   └── styles.css
+    └── pothole_app/
+        └── src/
+            ├── App.css
+            ├── App.js
+            ├── components/
+            │   └── ProgressBar.js
+            ├── pages/
+            │   ├── MainPage.js
+            │   ├── MyPage.js
+            │   ├── PointStatusPage.js
+            │   ├── PotholeDetectionPage.js
+            │   ├── RewardCheckPage.js
+            │   └── TransferredVideosPage.js
+            └── styles.css
 ```
 
 
