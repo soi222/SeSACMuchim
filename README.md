@@ -55,14 +55,14 @@
 <br><br>
 
 ## 🔧 기술 스택
-**Frontend**<br>
-   <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white">
+**Language & Frontend**<br>
+   <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">
    <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=Axios&logoColor=white"><br><br>
 **Backend**<br>
    <img src="https://img.shields.io/badge/express-FF4747?style=for-the-badge&logo=express&logoColor=white">
    <img src="https://img.shields.io/badge/openAI API-412991?style=for-the-badge&logo=openai&logoColor=white"><br><br>
 **ML / DL**<br>
-   <img src="https://img.shields.io/badge/YOLOv8-5C3EE8?style=for-the-badge&logo=YOLOv8&logoColor=white">
+   <img src="https://img.shields.io/badge/YOLOv8-09B3AF?style=for-the-badge&logo=YOLOv8&logoColor=white">
    <img src="https://img.shields.io/badge/Whisper-6332F6?style=for-the-badge&logo=Whisper&logoColor=white">
    <img src="https://img.shields.io/badge/GTTS-4285F4?style=for-the-badge&logo=google&logoColor=white"><br><br>
 **Cloud**<br>
@@ -70,6 +70,14 @@
 **Data Processing** <br>
    <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white">
    <img src="https://img.shields.io/badge/numpy-013243?style=for-the-badge&logo=numpy&logoColor=white">
+   <img src="https://img.shields.io/badge/matplotlib-3776AB?style=for-the-badge&logo=matplotlib&logoColor=white"> <br><br>
+**Tools & IDEs** <br>
+   <img src="https://img.shields.io/badge/visual studio-5395FD?style=for-the-badge&logo=visualstudio&logoColor=white">
+   <img src="https://img.shields.io/badge/googlecolab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white">
+   <img src="https://img.shields.io/badge/github-000000?style=for-the-badge&logo=github&logoColor=white"><br>
+   <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white">
+   <img src="https://img.shields.io/badge/googledrive-4285F4?style=for-the-badge&logo=googleDrive&logoColor=white">
+
 
 <br>
 
@@ -91,6 +99,10 @@
 | **UI & UX : 사용자 화면** <br><br>React.js 프론트엔드,<br> Express.js 백엔드 |<img src="https://github.com/user-attachments/assets/22edae6c-125e-41ac-9332-478677e39511" width="600" height="250"> <br> <img src="https://github.com/user-attachments/assets/71fa1f86-c667-49e9-8ab6-c6b11cc34016" width="600" height="250">|
 | **UI & UX : 관리자 화면** <br><br>LLM 분석 및 포트홀 탐지 통계,<br> LLM 기반 챗봇 |<img src="https://github.com/user-attachments/assets/5093a98f-66b3-4e51-9555-39a16a49fae4" width="600" height="250"> <br> <img src="https://github.com/user-attachments/assets/e6932678-f3df-47f7-9ec0-720f983908f7" width="600" height="250">|
 
+<br>
+
+## 🚨 문제인지 및 해결
+### 모델 성능 개선
 <br>
 
 ## 📈 결과
