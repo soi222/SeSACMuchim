@@ -1,19 +1,8 @@
 # 📸 Pothole Detection Project
 
-> 도로 품질 관리를 위한 포트홀 검출 AI 시스템
-
-![image](https://github.com/user-attachments/assets/4b4d3b61-62e1-4bb7-b682-cb5c59faa411)
-
-<br><br>
-
-## 🔍 프로젝트 소개
-포트홀은 도로 안전에 심각한 영향을 미치는 주요 문제로, 차량 손상과 연쇄 사고를 유발할 수 있는 위험 요소입니다.  
-특히, 고속도로와 같은 환경에서는 작은 포트홀도 대형 사고로 이어질 가능성이 높아 그 심각성은 더욱 부각됩니다.  
-이에 따라, 본 프로젝트는 딥러닝 기반 **YOLOv8(Object Detection 모델)** 을 활용하여 실시간 포트홀 감지 시스템을 구축하는 것을 목표로 했습니다.  
-
-우리 팀은 도로 데이터의 다양성과 실제 환경의 특성을 고려한 데이터셋 설계부터 모델 개발, 성능 평가, 그리고 사용자 친화적인 서비스 구현까지 프로젝트 전반을 통합적으로 수행하였습니다.   
-이를 통해 도로 관리 시스템의 효율성을 극대화하고, 사회적 비용을 절감할 수 있는 혁신적인 기술 솔루션을 제안합니다.  
-
+### 도로 품질 관리를 위한 포트홀 검출 AI 시스템
+<img src="https://github.com/user-attachments/assets/42b4685e-52db-4ead-b740-4e9e3ce48345" width="200" height="200">
+<img src="https://github.com/user-attachments/assets/c041572f-06e2-411b-92e7-615e208485a3" width="200" height="200">
 <br><br>
 
 ## 👨‍💻 팀원 구성
@@ -31,11 +20,11 @@
    <a href="https://github.com/Chang-Hyeon-Park">@Chang-Hyeon-Park</a> 
   </td> 
   <td align="center"> 
-   <img src="https://via.placeholder.com/150" width="100" height="100" style="border-radius: 50%;"><br> 
+   <img src="https://github.com/user-attachments/assets/32926237-78f1-4146-8eb9-73c38b6ddfd2" width="100" height="100" style="border-radius: 50%;"><br> 
    <a href="https://github.com/mean71">@mean71</a> 
   </td> 
   <td align="center"> 
-   <img src="https://via.placeholder.com/150" width="100" height="100" style="border-radius: 50%;"><br> 
+   <img src="https://github.com/user-attachments/assets/5f483fa6-a925-4de8-bf1a-19e8d2d8e3c4" width="100" height="100" style="border-radius: 50%;"><br> 
    <a href="https://github.com/Seajune117">@Seajune117</a> 
   </td> 
   <td align="center"> 
@@ -43,83 +32,185 @@
    <a href="https://github.com/G1song">@G1song</a> 
   </td> 
   <td align="center"> 
-   <img src="https://via.placeholder.com/150" width="100" height="100" style="border-radius: 50%;"><br> 
+   <img src="https://github.com/user-attachments/assets/a5135ef2-86f4-4748-bd27-a1500240ced5" width="100" height="100" style="border-radius: 50%;"><br> 
    <a href="https://github.com/soi222">@soi222</a> 
   </td> 
  </tr> 
 </table>
 
+<br>
+
+## 🔍 프로젝트 소개
+**포트홀(Pothole)** : 도로 균열에 물기가 스며들어 도로가 부서지고 파이는 현상 <br><br>
+포트홀로 인해 차량 손상, 연쇄 사고 유발 및 안전 위협이 발생할 수 있으며, 2021-24년 7월 포트홀 1만 9천건으로 매년 증가하고 있습니다.이에 따라, 본 프로젝트는 딥러닝 기반 **YOLOv8(Object Detection 모델)** 을 활용하여 실시간 포트홀 감지 시스템을 구축하는 것을 목표로 합니다.  
+우리 팀은 도로 데이터의 다양성과 실제 환경의 특성을 고려한 데이터셋 설계부터 모델 개발, 성능 평가, 그리고 사용자 친화적인 서비스 구현까지 프로젝트 전반을 통합적으로 수행하였습니다.
+이를 통해 도로 관리 시스템의 효율성을 극대화하고, 사회적 비용을 절감할 수 있는 혁신적인 기술 솔루션을 제안하고자 합니다.  
+
+<br>
+
+## 🎯 프로젝트 목표
+◎ **실시간 포트홀 탐지**<br>YOLOv8을 활용한 정확도 높은 Object Detection.<br><br>
+◎ **데이터 기반 도로 관리**<br>포트홀 위험도 분석 및 효율적인 도로 유지보수 계획 지원.<br><br>
+◎ **사용자 참여 증대**<br>음성 입력 및 리워드 제공을 통해 도로 안전에 대한 참여 증진.
 <br><br>
 
-## 📊 데이터셋 구축
-✅ 데이터 수집
- - 총 데이터 : 10,488개의 이미지 및 라벨 데이터
- - 출처 : [AI허브-부산 항만도로 데이터셋](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=&topMenu=&aihubDataSe=data&dataSetSn=71554), Roboflow, Mendeley Data
- - 다양성 : 날씨, 지역, 시간대, 환경별로 수집된 데이터
+## 🔧 기술 스택
+**Language & Frontend**<br>
+   <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+   <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white">
+   <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=Axios&logoColor=white"><br><br>
+**Backend**<br>
+   <img src="https://img.shields.io/badge/express-FF4747?style=for-the-badge&logo=express&logoColor=white">
+   <img src="https://img.shields.io/badge/openAI API-412991?style=for-the-badge&logo=openai&logoColor=white"><br><br>
+**ML / DL**<br>
+   <img src="https://img.shields.io/badge/YOLOv8-09B3AF?style=for-the-badge&logo=YOLOv8&logoColor=white">
+   <img src="https://img.shields.io/badge/Whisper-6332F6?style=for-the-badge&logo=Whisper&logoColor=white">
+   <img src="https://img.shields.io/badge/GTTS-4285F4?style=for-the-badge&logo=google&logoColor=white"><br><br>
+**Cloud**<br>
+   <img src="https://img.shields.io/badge/AWS Rekognition-FF9900?style=for-the-badge&logo=AWS Rekognition&logoColor=black"><br><br>
+**Data Processing** <br>
+   <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white">
+   <img src="https://img.shields.io/badge/numpy-013243?style=for-the-badge&logo=numpy&logoColor=white">
+   <img src="https://img.shields.io/badge/matplotlib-3776AB?style=for-the-badge&logo=matplotlib&logoColor=white"> <br><br>
+**Tools & IDEs** <br>
+   <img src="https://img.shields.io/badge/visual studio-5395FD?style=for-the-badge&logo=visualstudio&logoColor=white">
+   <img src="https://img.shields.io/badge/googlecolab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white">
+   <img src="https://img.shields.io/badge/github-000000?style=for-the-badge&logo=github&logoColor=white"><br>
+   <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white">
+   <img src="https://img.shields.io/badge/googledrive-4285F4?style=for-the-badge&logo=googleDrive&logoColor=white">
 
-✅ 데이터 전처리
- - 결측치 및 이상치 제거
- - 라벨 포맷 변환  XML, JSON -> YOLO 형식 (\<class>, \<x>, \<y>, \<width>, \<height>)
- - 데이터 분할 : Train/Valid/Test = 7:2:1
 
-<br><br>
+<br>
+
 
 ## 🧠 모델 설명
-✅ 모델 선택 이유
- - YOLOv8: 빠른 처리 속도와 높은 정확도 제공.
- - 평가지표: Precision, Recall, mAP50, mAP50-95.
- - 성능 비교: YOLOv5 대비 mAP50, FPS, Precision/Recall 모두 개선.
+✅ 선정 모델 : [YOLOv8 Large](https://docs.ultralytics.com/ko/models/yolov8/)
+ - YOLOv8의 **End-to-End** 신경망은 이미지 전체를 한 번에 처리
+ - 빠른 처리 속도와 높은 정확도 제공
+ - 특히, **소형 객체 탐지**에 탁월한 성능 보임
 
-✅ 성능 개선 방법
- - 하이퍼파라미터 튜닝.
- - 데이터 증강 및 리샘플링.
- - 추가 데이터 학습.
+<br>
 
-✅ 최종 선정 모델
- - YOLOv8 Large: 작은 물체 검출 및 정확도 우수.
+## 🛠 서비스 구현   
+| 항목 | 설명 |
+|:---:|:---:|
+| **YOLOv8 기반 포트홀 감지**<br><br> 포트홀 감지 및 데이터 저장 | <img src="https://github.com/user-attachments/assets/ae523bf9-e6c2-4f42-8b64-3335cbfd272f" width="650" height="300">|
+| **프라이버시 보호**<br><br>(1) 얼굴 블러링 (Deface, ORB-HD)<br>(2) 차량 번호판 블러링<br>(Amazon Rekognition API) | <img src="https://github.com/user-attachments/assets/5c952260-1d6e-4360-9b13-6fa6c6203c40" width="650" height="300">|
+| **STT / TTS**<br><br>STT (Whisper (OpenAI))<br> TTS (Google TTS) | <figure class="half">  <a href="link"><img src="https://github.com/user-attachments/assets/b675091d-b7e4-45db-b376-6dbb88bde092"></a>  <a href="link"><img src="https://github.com/user-attachments/assets/5ef3c566-9333-44d0-a8c5-656a139c1bd7"></a></figure>|
+| **UI & UX : 사용자 화면** <br><br>React.js 프론트엔드,<br> Express.js 백엔드 |<img src="https://github.com/user-attachments/assets/22edae6c-125e-41ac-9332-478677e39511" width="600" height="250"> <br> <img src="https://github.com/user-attachments/assets/71fa1f86-c667-49e9-8ab6-c6b11cc34016" width="600" height="250">|
+| **UI & UX : 관리자 화면** <br><br>LLM 분석 및 포트홀 탐지 통계,<br> LLM 기반 챗봇 |<img src="https://github.com/user-attachments/assets/5093a98f-66b3-4e51-9555-39a16a49fae4" width="600" height="250"> <br> <img src="https://github.com/user-attachments/assets/e6932678-f3df-47f7-9ec0-720f983908f7" width="600" height="250">|
 
-<br><br>
+<br>
 
-## 🛠 서비스 구현
-✅ 주요 기능
- - 포트홀 감지: YOLOv8 기반 감지 및 데이터 저장.
- - 프라이버시 보호:
-   - 얼굴 블러링: Deface, ORB-HD.
-   - 차량 번호판 블러링: Amazon Rekognition API.
- - STT/TTS:
-   - STT: Whisper (OpenAI).
-   - TTS: Google TTS.
- - UI/UX:
-   - React.js 기반 프론트엔드.
-   - Express.js 및 OpenAI API 활용 백엔드.
-
-<br><br>
+## 🚨 문제인지 및 해결
+### 모델 성능 개선
+<br>
 
 ## 📈 결과
- - YOLOv8 Large 성능:
-   - Precision: 98.8%
-   - Recall: 91.8%
-   - mAP50: 99.1%
-   - FPS: 50
+✅YOLOv8 Large 성능 결과
+| Precision | Recall | mAP50 | FPS|
+|:---:|:---:|:---:|:---:|
+|98.8%|91.8%|99.1%|50|
+
  - 모델 개선 후:
    - Precision, Recall 증가.
    - mAP50-95 개선.
 
-<br><br>
+<br>
 
-## 🔧 기술 스택
- - Frontend: React.js, Axios.
- - Backend: Express.js, OpenAI API.
- - ML/DL: YOLOv8, Whisper, GTTS.
- - Cloud: AWS Rekognition.
+## 📂디렉토리 구조
+```
+# Directory structure for Pothole Detection Project
 
-<br><br>
+SeSACMuchim-1/
+├── DL/
+│   ├── Dataset/
+│   │   ├── CSV/
+│   │   ├── Detection/
+│   │   ├── images_processing/
+│   │   │   ├── Inspection/
+│   │   │   │   ├── Convert_to_txt.ipynb
+│   │   │   │   ├── Data_Length.ipynb
+│   │   │   │   ├── sync_check.ipynb
+│   │   │   │   └── train_valid_split_8163.ipynb
+│   │   │   ├── Merge/
+│   │   │   │   ├── Data_Merge.ipynb
+│   │   │   └── Preprocessor_United/
+│   ├── LLM/
+│   │   ├── LLM_test_241122.ipynb
+│   │   └── RAG_address.ipynb
+│   ├── Models/
+│   │   ├── yolov5/
+│   │   │   ├── code/
+│   │   │   │   ├── detect.py
+│   │   │   │   ├── export.py
+│   │   │   │   ├── train.py
+│   │   │   │   └── val.py
+│   │   │   ├── etc/
+│   │   │   │   ├── pothole.yaml
+│   │   │   │   ├── pothole_8K.yaml
+│   │   │   │   └── requirements.txt
+│   │   │   ├── yolov5l_test/
+│   │   │   │   └── weights/
+│   │   │   │       └── best.pt
+│   │   │   ├── yolov5m_test/
+│   │   │   ├── yolov5n_test/
+│   │   │   ├── yolov5s_test/
+│   │   │   └── yolov5_test_pt/
+│   │   └── yolov8/
+│   │       ├── etc/
+│   │       ├── yolov8l_10K_hpt_ver/
+│   │       │   ├── custom_args.yaml
+│   │       │   ├── yolo8l_10K_hpt_ver.ipynb
+│   │       │   ├── yolov8l_pothole_10K.yaml
+│   │       │   └── results/
+│   │       └── yolov8l_8K/
+├── PrivacyMasking/
+│   ├── CarPlateBlurring.py
+│   └── FaceBlurring.py
+├── STTTTS/
+│   ├── STTTTS_Final.py
+│   ├── test/
+├── TEST/
+│   ├── YOLOv5_test/
+│   └── YOLOv8_test/
+│       ├── yolov8l_10K.ipynb
+│       └── yolov8l_8K.ipynb
+└── WEB/
+    ├── government_pothole_app/
+    │   ├── public/
+    │   │   ├── test_csv.csv
+    │   ├── src/
+    │   │   ├── App.css
+    │   │   ├── App.js
+    │   │   ├── components/
+    │   │   │   ├── ImageStep.js
+    │   │   │   └── VideoUploader.js
+    │   │   ├── index.css
+    │   │   ├── index.js
+    │   │   └── styles.css
+    └── pothole_app/
+        └── src/
+            ├── App.css
+            ├── App.js
+            ├── components/
+            │   └── ProgressBar.js
+            ├── pages/
+            │   ├── MainPage.js
+            │   ├── MyPage.js
+            │   ├── PointStatusPage.js
+            │   ├── PotholeDetectionPage.js
+            │   ├── RewardCheckPage.js
+            │   └── TransferredVideosPage.js
+            └── styles.css
+```
+<br>
 
-## 👨‍💻 팀원
-|이름|역할|분석주제|분석결과|Github|
-|--|--|--|--|--|
-|**박창현**|분석|제작사 중심 영화 흥행 요인 분석|[PPT](./presentation/SeSAC_Movie_data_anlaysis_MJ.pdf)|[Click!](https://github.com/Chang-Hyeon-Park)|
-|**박민기**|분석 및 모델링|영화 키워드와 영화 평점간의 상관관계 분석 <br> 평점 예측 모델 제작|[PPT](./presentation/SeSAC-MiniProject_yugyeongjo.pdf)|[Click!](https://github.com/mean71)|
-|**박형준**|분석|제작사 중심 영화 흥행 요인 분석|[PPT](./presentation/Chang_Movies_Data_PPT.pdf)|[Click!](https://github.com/Seajune117)|
-|**송지원**|분석|영화 산업의 시대별 변화와 트렌드 분석|[PPT](./presentation/SESAC%20MiniProject-DongWoo.pdf.pdf)|[Click!](https://github.com/G1song)|
-|**위서현**|분석|영화 인기도에 영향을 미치는 요인 분석|[PPT](./presentation/SeSAC_Movie_data_anlaysis_soyoun.pdf.pdf)|[Click!](https://github.com/soi222)|
+## 👨‍💻 역할분배
+|이름|역할|상세내용|Github|
+|--|--|--|--|
+|**박창현**|AI모델링|......|[Click!](https://github.com/Chang-Hyeon-Park)|
+|**박민기**|AI모델링|......|[Click!](https://github.com/mean71)|
+|**박형준**|AI모델링|......|[Click!](https://github.com/Seajune117)|
+|**송지원**|AI모델링|......|[Click!](https://github.com/G1song)|
+|**위서현**|AI모델링|......|[Click!](https://github.com/soi222)|
