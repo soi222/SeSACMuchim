@@ -84,62 +84,62 @@ parameters:
     value : true
   hsv_h:
     distribution: uniform # 범위 내에서 모든 값이 동일한 확률로 선택됨됨
-    min: 0.0
-    max: 0.1
+    min: 0.015
+    max: 0.05
   hsv_v:
     distribution: uniform
-    min: 0.0
-    max: 0.7
+    min: 0.2
+    max: 0.6
   degrees:
     distribution: uniform
     min: 0.0
-    max: 10.0
+    max: 15.0
   translate:
     distribution: uniform
-    min: 0.0
+    min: 0.05
     max: 0.2
   scale:
     distribution: uniform
-    min: 0.0
-    max: 0.9
+    min: 0.5
+    max: 0.7
   shear:
     distribution: uniform
     min: 0.0
-    max: 10.0
+    max: 5.0
   mosaic:
     distribution: uniform
-    min: 0.0
+    min: 0.8
     max: 1.0
-  mixup:
-    distribution: uniform
-    min: 0.0
-    max: 1.0
+  # mixup:
+  #   distribution: uniform
+  #   min: 0.0
+  #   max: 0.2
   perspective:
     distribution: uniform
-    min: 0.0
-    max: 0.001
-  flipud:
-    distribution: uniform
-    min: 0.0
-    max: 1.0
+    min: 0.0005
+    max: 0.005
+  # flipud:
+  #   distribution: uniform
+  #   min: 0.0
+  #   max: 1.0
   fliplr:
     distribution: uniform
-    min: 0.0
+    min: 0.5
     max: 1.0
   bgr:
-    values: ['true', 'false']
+    value: 'false'
   copy_paste:
     distribution: uniform
     min: 0.0
-    max: 1.0
+    max: 0.2
   copy_paste_mode:
-    values: ['flip', 'blend', 'none']
+    value: 'flip'
   auto_augment:
-    values: ['randaugment', 'none']
+    value: 'randaugment'
   erasing:
     distribution: uniform
-    min: 0.0
-    max: 1.0
+    min: 0.3
+    max: 0.6
   crop_fraction:
     distribution: uniform
     min: 0.5
