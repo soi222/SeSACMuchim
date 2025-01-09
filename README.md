@@ -102,7 +102,7 @@
 | **프라이버시 보호**<br><br>(1) 얼굴 블러링 (Deface, ORB-HD)<br>(2) 차량 번호판 블러링<br>(Amazon Rekognition API) | <img src="https://github.com/user-attachments/assets/5c952260-1d6e-4360-9b13-6fa6c6203c40" width="650" height="300">|
 | **STT / TTS**<br><br>STT (Whisper (OpenAI))<br> TTS (Google TTS) | <figure class="half">  <a href="link"><img src="https://github.com/user-attachments/assets/b675091d-b7e4-45db-b376-6dbb88bde092"></a>  <a href="link"><img src="https://github.com/user-attachments/assets/5ef3c566-9333-44d0-a8c5-656a139c1bd7"></a></figure>|
 | **UI & UX : 사용자 화면** <br><br>React.js 프론트엔드,<br> Express.js 백엔드 |<img src="https://github.com/user-attachments/assets/22edae6c-125e-41ac-9332-478677e39511" width="600" height="250"> <br> <img src="https://github.com/user-attachments/assets/71fa1f86-c667-49e9-8ab6-c6b11cc34016" width="600" height="250">|
-| **UI & UX : 관리자 화면** <br><br>LLM 분석 및 포트홀 탐지 통계,<br> LLM 기반 챗봇 |<img src="https://github.com/user-attachments/assets/5093a98f-66b3-4e51-9555-39a16a49fae4" width="600" height="250"> <br> <img src="https://github.com/user-attachments/assets/e6932678-f3df-47f7-9ec0-720f983908f7" width="600" height="250">|
+| **UI & UX : 관리자 화면** <br><br>LLM 분석 및 포트홀 탐지 통계,<br> LLM 기반 챗봇 <br> RAG형식을 차용. csv파일을 DB로 활용해 <br> 검색값을 가져온 뒤 LLM에 피딩해 답변 생성|<img src="https://github.com/user-attachments/assets/5093a98f-66b3-4e51-9555-39a16a49fae4" width="600" height="250"> <br> <img src="https://github.com/user-attachments/assets/e6932678-f3df-47f7-9ec0-720f983908f7" width="600" height="250">|
 
 <br>
 
