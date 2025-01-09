@@ -1,9 +1,13 @@
 # 📸 Pothole Detection Project
 
-### 도로 품질 관리를 위한 포트홀 검출 AI 시스템
+###  Yolov8 Large모델을 활용한 도로 내 실시간 포트홀 검출 AI 시스템
 <img src="https://github.com/user-attachments/assets/42b4685e-52db-4ead-b740-4e9e3ce48345" width="200" height="200">
 <img src="https://github.com/user-attachments/assets/c041572f-06e2-411b-92e7-615e208485a3" width="200" height="200">
 <br><br>
+
+### 📷시연 영상
+[관리자 화면](https://www.youtube.com/watch?v=1RLB2mshktk) <br>
+[사용자 화면](https://www.youtube.com/watch?v=tEUulAdAeEs) <br><br>
 
 ## 👨‍💻 팀원 구성
 <table> 
