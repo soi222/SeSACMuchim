@@ -6,8 +6,8 @@
 <br><br>
 
 ### 📷시연 영상
-[전체 시연 영상 : 사용자 및 관리자 화면](https://www.youtube.com/watch?v=1RLB2mshktk) <br>
-[관리자 화면](https://www.youtube.com/watch?v=tEUulAdAeEs) <br><br>
+[전체 시연 영상 : 사용자 및 관리자 화면](https://www.youtube.com/watch?v=tEUulAdAeEs) <br>
+[관리자 화면](https://www.youtube.com/watch?v=1RLB2mshktk) <br><br>
 
 ## 👨‍💻 팀원 구성
 <table> 
